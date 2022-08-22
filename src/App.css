@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .App-logo {
@@ -32,7 +34,129 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+li {
+  flex-grow: 1;
+  width: 33%;
+  height: 326px;
+  list-style-type: none;
+}
+
+.sell {
+  background: #f1f2f6 !important;
+  border: none;
+  color: #333;
+  cursor: auto;
+  touch-action: manipulation;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+.sell-active {
+  border: none;
+  color: #333;
+  cursor: auto;
+  touch-action: manipulation;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  background: linear-gradient(180deg,#f53b82,#f53b57);
+}
+
+.buy {
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  background: linear-gradient(180deg, #2ecc71, #1abc9c);
+  font-size: 16px;
+  text-align: center;
+}
+span{
+  padding: 15px;
+}
+img{
+  height: 120px;
+  max-width: 100%;
+  display: block;
+    margin: 15px auto;
+}
+input {
+  height: 28px;
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+.navi{
+  color: #fff;
+    background-color: #2ecc71;
+    background: linear-gradient(180deg,#2ecc71,#1abc9c);
+    padding: 20px;
+    margin: 10px 0;
+    font-family: Roboto,sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    top: 0;
+    position: sticky;
+    z-index: 9999;
+}
+.header{
+  font-size: 32px;
+  background: #fff;
+  padding: 30px 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3em;
+}
+.header-img{
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 125px;
+  height: 125px;
+  margin: 10px auto 25px;
+  border-radius: 125px;
 }
