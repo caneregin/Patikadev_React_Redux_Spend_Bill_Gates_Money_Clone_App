@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+# React Redux Spend Bill Gates Money Clone App
+## Yayınlandı: https://dainty-biscotti-9cbfe7.netlify.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Ürün alınmamışsa satılmamaktadır. Para miktarı bitince yeni ürün eklenmemektedir. Kendimiz rakam ile kaç tane alacağımızı belirleyebiliriz. 
+![bill4](https://user-images.githubusercontent.com/36435160/187640428-384ec615-7c86-41e8-961e-2cf89e51d60b.png)
 
-## Available Scripts
+## Butonlar içerisinde para miktarı aşmaması ve 0 altına inmeme koşulu verilmiştir. Buy veya sell butonlarına tıklandığında redux increment ve decrement ile karşılanmaktadır. input sayı girildiğinde girilen miktar redux quantityUpdate ile karşılanmaktadır.
+![bill1](https://user-images.githubusercontent.com/36435160/187640900-d28809c9-8354-48ca-84d8-cdb6fb19cb40.png)
 
-In the project directory, you can run:
+## initial değerler belirtilmiştir. Reducer increment kullanımında Buy butona tıklandığında ilgili ürün id ile bulunur. initial state değeri 1 artırılır. Tüm ürünlerin fiyatı ve miktarları map ile  çarpılır. Geçici verdiğim totalCostMoney değerinden düşülür. Bu değer initial değere eşitlenir.
+![bill2](https://user-images.githubusercontent.com/36435160/187641488-9830a475-631d-4773-9326-00d62d941376.png)
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## decrement kullanımında sell butonuna tıklanır ve burada karşılanır. Tıklanan ürün id ile initial değerlerdeki id eşleşir. Quantity 1 azalır. Geçici para değeri verilir. Tüm ürünlerin fiyat ve miktarları çarpılıp geçici değerden düşülür. Geçici değer initial değere eşitlenir. quantityUpdate aynı şekilde inputa girilen değer karşılanır.
+![bill3](https://user-images.githubusercontent.com/36435160/187642257-4e6ae4be-0347-40c7-97fa-5f45df0a2e7a.png)
